@@ -30,7 +30,7 @@ x, y = int((bg_size[0]-avatar_size[0])/2), int((bg_size[1]-avatar_size[1])/2)
 box = (x, y, (x + avatar_size[0]), (y + avatar_size[1]))
 bg.paste(avatar, box, mask)
 
-img_path = os.path.join('.', 'output', 'round_avatar.png')
+img_path = os.path.join('.', 'output', 'round_avatar.jpg')
 bg.save(img_path)
 print('保存成功 at {}'.format(img_path))
 
