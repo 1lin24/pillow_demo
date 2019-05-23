@@ -19,7 +19,7 @@ bg = Image.new('RGB', bg_size, color=(255,255,255))
 
 avatar_size = (200, 200)
 avatar_path = os.path.join('.', 'imgs', 'avatar.jpeg')
-avatar = Image.open(avatar_path).convert('RGBA')
+avatar = Image.open(avatar_path)
 avatar = avatar.resize(avatar_size)
 
 mask = Image.new('RGBA', avatar_size, color=(0,0,0,0))
